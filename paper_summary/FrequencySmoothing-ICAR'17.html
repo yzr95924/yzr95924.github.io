@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>FrequencySmoothing-ICAR&#39;17</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:first-child { margin-top: -20px; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+:root { --side-bar-bg-color: #fafafa; --control-text-color: #777; }
+html { font-size: 16px; }
+body { font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: rgb(51, 51, 51); line-height: 1.6; }
+#write { max-width: 860px; margin: 0px auto; padding: 30px 30px 100px; }
+#write > ul:first-child, #write > ol:first-child { margin-top: 30px; }
+a { color: rgb(65, 131, 196); }
+h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.4; cursor: text; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { text-decoration: none; }
+h1 tt, h1 code { font-size: inherit; }
+h2 tt, h2 code { font-size: inherit; }
+h3 tt, h3 code { font-size: inherit; }
+h4 tt, h4 code { font-size: inherit; }
+h5 tt, h5 code { font-size: inherit; }
+h6 tt, h6 code { font-size: inherit; }
+h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+h3 { font-size: 1.5em; line-height: 1.43; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; color: rgb(119, 119, 119); }
+p, blockquote, ul, ol, dl, table { margin: 0.8em 0px; }
+li > ol, li > ul { margin: 0px; }
+hr { height: 2px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; overflow: hidden; box-sizing: content-box; }
+li p.first { display: inline-block; }
+ul, ol { padding-left: 30px; }
+ul:first-child, ol:first-child { margin-top: 0px; }
+ul:last-child, ol:last-child { margin-bottom: 0px; }
+blockquote { border-left: 4px solid rgb(223, 226, 229); padding: 0px 15px; color: rgb(119, 119, 119); }
+blockquote blockquote { padding-right: 0px; }
+table { padding: 0px; word-break: initial; }
+table tr { border-top: 1px solid rgb(223, 226, 229); margin: 0px; padding: 0px; }
+table tr:nth-child(2n), thead { background-color: rgb(248, 248, 248); }
+table tr th { font-weight: bold; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgb(223, 226, 229); border-right-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; text-align: left; margin: 0px; padding: 6px 13px; }
+table tr td { border: 1px solid rgb(223, 226, 229); text-align: left; margin: 0px; padding: 6px 13px; }
+table tr th:first-child, table tr td:first-child { margin-top: 0px; }
+table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
+.CodeMirror-lines { padding-left: 4px; }
+.code-tooltip { box-shadow: rgba(0, 28, 36, 0.3) 0px 1px 1px 0px; border-top: 1px solid rgb(238, 242, 242); }
+.md-fences, code, tt { border: 1px solid rgb(231, 234, 237); background-color: rgb(248, 248, 248); border-radius: 3px; padding: 2px 4px 0px; font-size: 0.9em; }
+code { background-color: rgb(243, 244, 244); padding: 0px 2px; }
+.md-fences { margin-bottom: 15px; margin-top: 15px; padding-top: 8px; padding-bottom: 6px; }
+.md-task-list-item > input { margin-left: -1.3em; }
+@media print {
+  html { font-size: 13px; }
+  table, pre { break-inside: avoid; }
+  pre { word-wrap: break-word; }
+}
+.md-fences { background-color: rgb(248, 248, 248); }
+#write pre.md-meta-block { padding: 1rem; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border: 0px; border-radius: 3px; color: rgb(119, 119, 119); margin-top: 0px !important; }
+.mathjax-block > .code-tooltip { bottom: 0.375rem; }
+.md-mathjax-midline { background: rgb(250, 250, 250); }
+#write > h3.md-focus::before { left: -1.5625rem; top: 0.375rem; }
+#write > h4.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h5.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h6.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+.md-image > .md-meta { border-radius: 3px; padding: 2px 0px 0px 4px; font-size: 0.9em; color: inherit; }
+.md-tag { color: rgb(167, 167, 167); opacity: 1; }
+.md-toc { margin-top: 20px; padding-bottom: 20px; }
+.sidebar-tabs { border-bottom: none; }
+#typora-quick-open { border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); }
+#typora-quick-open-item { background-color: rgb(250, 250, 250); border-color: rgb(254, 254, 254) rgb(229, 229, 229) rgb(229, 229, 229) rgb(238, 238, 238); border-style: solid; border-width: 1px; }
+.on-focus-mode blockquote { border-left-color: rgba(85, 85, 85, 0.12); }
+header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Arial, sans-serif; }
+.file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state { visibility: visible; }
+.mac-seamless-mode #typora-sidebar { background-color: var(--side-bar-bg-color); }
+.md-lang { color: rgb(180, 101, 77); }
+.html-for-mac .context-menu { --item-hover-bg-color: #E6F0FE; }
+#md-notification .btn { border: 0px; }
+.dropdown-menu .divider { border-color: rgb(229, 229, 229); }
+
+
+
+
+
+
+</style>
+</head>
+<body class='typora-export' >
+<div  id='write'  class = 'is-node'><h2><a name='header-n3' class='md-header-anchor '></a>Frequency-smoothing Encryption: Preventing Snapshot Attacks on Deterministically Encrypted Data</h2><figure><table><thead><tr><th style='text-align:center;' >Venue</th><th style='text-align:center;' >Category</th></tr></thead><tbody><tr><td style='text-align:center;' >ICAR&#39;17</td><td style='text-align:center;' >Encryption</td></tr></tbody></table></figure><div class='md-toc' mdtype='toc'><p class="md-toc-content"><span class="md-toc-item md-toc-h2" data-ref="n3"><a class="md-toc-inner" href="#header-n3">Frequency-smoothing Encryption: Preventing Snapshot Attacks on Deterministically Encrypted Data</a></span><span class="md-toc-item md-toc-h2" data-ref="n12"><a class="md-toc-inner" href="#header-n12">1. Summary</a></span><span class="md-toc-item md-toc-h3" data-ref="n13"><a class="md-toc-inner" href="#header-n13">Motivation of this paper</a></span><span class="md-toc-item md-toc-h3" data-ref="n22"><a class="md-toc-inner" href="#header-n22">Frequency-smoothing encryption (FSE)</a></span><span class="md-toc-item md-toc-h3" data-ref="n133"><a class="md-toc-inner" href="#header-n133">Implementation and Evaluation</a></span><span class="md-toc-item md-toc-h2" data-ref="n148"><a class="md-toc-inner" href="#header-n148">2. Strength (Contributions of the paper)</a></span><span class="md-toc-item md-toc-h2" data-ref="n154"><a class="md-toc-inner" href="#header-n154">3. Weakness (Limitations of the paper)</a></span><span class="md-toc-item md-toc-h2" data-ref="n155"><a class="md-toc-inner" href="#header-n155">4. Future Works</a></span></p></div><h2><a name='header-n12' class='md-header-anchor '></a>1. Summary</h2><h3><a name='header-n13' class='md-header-anchor '></a>Motivation of this paper</h3><p>This paper intends to combat inference attacks of classical frequency analysis via using homophnic encoding.</p><blockquote><p>develop the concept of frequency-smoothing encryption (FSE)
+prevent inference attacks in the snapshot attack model</p></blockquote><ul><li>Frequency analysis
+If the plaintext distribution is not uniform and an adversary has a reference dataset from which it can compute expected plaintext frequenies</li></ul><blockquote><p>then the adversary can access to a snapshot opf the encrypted data
+try to match frequencies in the encrypted domain with those in plaintext domain</p></blockquote><h3><a name='header-n22' class='md-header-anchor '></a>Frequency-smoothing encryption (FSE)</h3><ul><li>Homophonic encoding
+Goal: flatten the frequency distribution of messages by mapping each plaintext to multiple possible homophones.</li></ul><blockquote><p>the number of encodings for each plaintext <span class='math-in-toc'>m</span> ideally being proportional to the frequency of <span class='math-in-toc'>m</span>
+this method wants to ensure that each message has enough homophones to combat frequency (but not so many that they cannot be all be computed on the fly)</p></blockquote><ul><li>Threat Model
+This paper achieves security against only two forms of attack:</li></ul><ol start='' ><li>the standard security notion for DE</li><li>against inference attacks made by a snapshot attacker</li></ol><ul><li>Algorithm
+Design goal: outputs ciphertext whose frequencies are uniform.</li></ul><blockquote><p>even an adversary who knows the underlying plaintext frequencies cannot infer anything about the data.</p></blockquote><p>Difference Measurement <span class='math-in-toc'>\Delta</span> (distribution adaptation parameter):
+Use the upper bound on the <strong>Kolomogorov-Smirnov</strong> statistic of the two distributions.</p><blockquote><p>statistical distance
+this parameter indicates how much uncertainty is associated with the initial estimated distribution <span class='math-in-toc'>\hat{D}</span>.
+If <span class='math-in-toc'>\Delta = 0</span>, it indicates complete confidence, the scheme will be entirely non-adaptive, ie., static.</p></blockquote><div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n45" cid="n45" mdtype="math_block"><div class="md-rawblock-container md-math-container" tabindex="-1"><script type="math/tex; mode=display">FSE =(Setup, KeyGen, Encrypt, Decrypt)</script></div></div><ul><li>Building FSE form HE and DE</li></ul><ol start='' ><li>first probabilistically encode the messages in a way that smooths the plaintext distribution.</li><li>then deterministically encrypt them.
+This paper presents such a two-part, modular construction that </li></ol><blockquote><ol start='' ><li>homophonic encoding: smooth frequencies </li><li>deterministic symmetric-key encryption: provide privacy</li></ol></blockquote><p><strong>A Stateful homophnic encoding scheme</strong></p><div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n61" cid="n61" mdtype="math_block"><div class="md-rawblock-container md-math-container" tabindex="-1"><script type="math/tex; mode=display">HE = (Setup, Encode, Decode)</script></div></div><p>All algorithms and parameters in a homophonic encoding scheme are <strong>keyless</strong>.</p><blockquote><p>provide no message privacy.
+Only consider the fixed-length encoding</p></blockquote><p>In this setting, it considers the indistinguishability of a series of samples from one of two distributions is more appropriate.</p><p><strong>Deterministic encryption</strong></p><div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n67" cid="n67" mdtype="math_block"><div class="md-rawblock-container md-math-container" tabindex="-1"><script type="math/tex; mode=display">DE = (KeyGen, Encrypt, Decrypt)</script></div></div><ul><li>Some static HE schemes 
+For this kind of scenario, it considers the the case that the data&#39;s actual distribution is known to both the data owner and the adversary.</li></ul><ol start='' ><li>Bounding an HE-SMOOTH adversary&#39;s advantage
+Since a message <span class='math-in-toc'>m</span>&#39;s homophone is chosen uniformly at random, each of its homophones <span class='math-in-toc'>e</span> will have frequency </li></ol><div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n74" cid="n74" mdtype="math_block"><div class="md-rawblock-container md-math-container" tabindex="-1"><script type="math/tex; mode=display">f_{D_s}(e) = \frac{f_{D}(m)}{|H^{HE}(m)|}</script></div></div><p>Here, it bounds an <span class='math-in-toc'>HE-SMOOTH</span> adversary;s distinguishing advantage using a result from <strong>Baigneres, Junod, and Vaudenay&#39;s statistical framework</strong> for analyzing distinguisher. </p><blockquote><p>It shows that error probability of an optimal distinguisher given a number of samples from two close distributions <span class='math-in-toc'>D_0</span> and <span class='math-in-toc'>D_1</span>
+this can be bounded in terms of the <strong>Kullback-Leibler (KL) divergence</strong> of <span class='math-in-toc'>D_0</span> with respect to <span class='math-in-toc'>D_1</span></p></blockquote><div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n79" cid="n79" mdtype="math_block"><div class="md-rawblock-container md-math-container" tabindex="-1"><script type="math/tex; mode=display">KL(D_0, D_1) := \sum_{m \in M} f_{D_0}(m) log\frac{f_{D_0}(m)}{f_{D_1}(m)}</script></div></div><p>&nbsp;</p><ol start='2' ><li>Interval-based Homophonic Encoding (IBHE)
+Main idea: partitions the set of <span class='math-in-toc'>r</span>-bit strings according to the distribution <span class='math-in-toc'>D</span>, message <span class='math-in-toc'>m</span> will be allocated an interval of about <span class='math-in-toc'>f_D(m) \times 2^r</span> bitstrings.</li></ol><blockquote><p>Each messgae will be replaced by one of its coresponding <span class='math-in-toc'>r</span>-bit strings.</p></blockquote><p>One way of partitioning the set of <span class='math-in-toc'>r</span>-bit strings according to <span class='math-in-toc'>D</span>:</p><blockquote><p>the messages in <span class='math-in-toc'>supp(D)={m_1, m_2, ...}</span> are numbered by increasing frequency according to <span class='math-in-toc'>D</span>.</p></blockquote><div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n89" cid="n89" mdtype="math_block"><div class="md-rawblock-container md-math-container" tabindex="-1"><script type="math/tex; mode=display">\{2^r \times F_D(m_{i-1}), ..., 2^r \times F_D(m_i) -1\}</script></div></div><p>The encoding algorithm for IBHE simply selects an encoding <span class='math-in-toc'>e</span> of <span class='math-in-toc'>m_i</span> uniformly at random from the relevant interval. This interval has size approximately <span class='math-in-toc'>2^r \times f_D(m_i)</span>, as desired.</p><p>How to set the encoding bitlength <span class='math-in-toc'>r</span>?</p><blockquote><p><span class='math-in-toc'>r</span> must be at least <span class='math-in-toc'>log_2|supp(D)|</span>, so each message can have at least one possible encoding.
+<span class='math-in-toc'>r</span> must be big enough so that each message is assigned a non-empty interval using this partitioning technique.</p></blockquote><p>This paper also proves the bound of <span class='math-in-toc'>r</span> to guarantee that every message <span class='math-in-toc'>m \in supp(D)</span> has at least <span class='math-in-toc'>h</span> homophones</p><div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n95" cid="n95" mdtype="math_block"><div class="md-rawblock-container md-math-container" tabindex="-1"><script type="math/tex; mode=display">r_{min-h} := \lceil max_{1 \leq i \leq |supp(D)|} log_2 \frac{i*h - 0.5}{F_D(m_i)} \rceil</script></div></div><p>Some variants with practicality in mind:</p><blockquote><ol start='' ><li>append encodings to message rather than entirely replacing them.</li><li>modify how intervals (homophone sets) are allocated in such a way that smaller encoding bitlengths are possible.  Just assign one homophone to each &quot;too small&quot; message. It does this until each of the remaining messages can be assigned at least one homophone</li></ol></blockquote><ol start='3' ><li>Banded homophonic encoding 
+Main idea: append tags to messages rather than replacing them entirely.</li></ol><blockquote><ol start='' ><li>the length of tag is <span class='math-in-toc'>l \geq 1</span></li><li>each message has at most <span class='math-in-toc'>2^l</span> homophones.</li><li>each message has a <strong>band</strong> that determines the number of possible tags that can be appended to it and therefore the number of homophones it has.</li></ol></blockquote><p>Divide the interval <span class='math-in-toc'>(0, f_D(m_{|supp(D)|}))</span> into <span class='math-in-toc'>2^l</span> bands, and each of width </p><div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n116" cid="n116" mdtype="math_block"><div class="md-rawblock-container md-math-container" tabindex="-1"><script type="math/tex; mode=display">w := \frac{f_D(m_{|supp(D)|})}{2^l}</script></div></div><p>This can numbered 1 to <span class='math-in-toc'>2^l</span>. The message whose frequencies are in band <span class='math-in-toc'>i</span>, in the interval <span class='math-in-toc'>((i-1)*w, i*w)</span>, will each have <span class='math-in-toc'>i</span> homophones.</p><blockquote><p>the most frequent message <span class='math-in-toc'>m_{|M|}</span>, will have <span class='math-in-toc'>2^l</span> homophones, all possible <span class='math-in-toc'>l</span>-bit strings can be appended to it.</p></blockquote><p>The main advantages of this banded HE schemes are that there is no minimum tag length and decoding is fast.</p><blockquote><p>It does not need any table of frequency information to decode. Just removes the last <span class='math-in-toc'>l</span> bits of the <span class='math-in-toc'>e</span> to remove the original message <span class='math-in-toc'>m</span>.</p></blockquote><ul><li>A maximum likelihood attack on static FSE
+The goal of a frequency-smoothing scheme is to smooth the distribution such that it becomes indistinguishable from uniform.</li></ul><p>The deterministic decryption functions</p><blockquote><p>it cannot map one ciphertext to multiple plaintexts</p></blockquote><p>Map the most frequently occurring ciphertexts (with largest <span class='math-in-toc'>n(c)</span> values) to the messages with the largest &quot;scaled frequencies&quot; <span class='math-in-toc'>\frac{f_D(m)}{|H^{FSE}(m)|}</span> </p><p>The adversary&#39;s goal is to find the correct <strong>many-to-one</strong> decryption mapping <span class='math-in-toc'>\theta: C \rightarrow M</span></p><p><img src='../paper_figure/1559919212428.png' alt='1559919212428' referrerPolicy='no-referrer' /></p><h3><a name='header-n133' class='md-header-anchor '></a>Implementation and Evaluation</h3><ul><li>Implementation
+Client:</li></ul><blockquote><p>the state <span class='math-in-toc'>s</span> of an FSE scheme is stored locally at the client.
+a proxy that transparently performs the encryption and decryption operations.</p></blockquote><p>Do the simulation of FSE and then attacking the FSE scheme</p><ul><li>Evaluation 
+The security metric this paper work with is the number of the data items that an attacker can correctly decrypt, which has been used for assessing the effectiveness of inference attacks in the literature (CCS&#39;15)</li></ul><p>Compared with the attack</p><blockquote><p>it applies the technique of maximum likelihood estimation (MLE) to derive an efficient attack on a static FSE scheme </p></blockquote><p>Goal: prove attacking FSE is hard, in particular, at least as hard as attacking DE.</p><h2><a name='header-n148' class='md-header-anchor '></a>2. Strength (Contributions of the paper)</h2><ol start='' ><li>The key question: whether this trade-off between preventing frequency leakage and increasing query complexity is beneficial.</li></ol><blockquote><p>this paper shows that the answer to this question is positive, at least for certain distributions. </p></blockquote><h2><a name='header-n154' class='md-header-anchor '></a>3. Weakness (Limitations of the paper)</h2><h2><a name='header-n155' class='md-header-anchor '></a>4. Future Works</h2></div>
+</body>
+</html>

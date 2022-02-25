@@ -1,0 +1,79 @@
+# jemdoc: menu{MENU}{index.html},  
+# nofooter
+==Zuoru Yang 
+
+~~~
+{}{img_left}{photos/bio.jpg}{alt text}{131}{160}
+Ph.D Student,\n
+Room 118, Ho Sin-Hang Engineering Building,\n 
+[http://www.cse.cuhk.edu.hk/en/ Department of Computer Science and Engineering],\n
+[http://www.cuhk.edu.hk/chinese/index.html The Chinese University of Hong Kong]\n
+E-mail: /yzr95924/@gmail.com \n
+# [pdf/cv_long.pdf A brief cv]
+~~~
+
+== About me
+Zuoru Yang got his Bachelor's degree from [http://www.cs.xjtu.edu.cn/ Department of Computer Science and Technology], [http://www.xjtu.edu.cn/ Xi'an Jiaotong University] in 2018.
+In /XJTU/, he worked with Prof Peng Zhang to do the research about Software-Defined Network (SDN) and Network Function Virtualization (NFV) (e.g. design debug/verification tool in SDN and NFV). Now, he is pursuing his PhD degree in [http://adslab.cse.cuhk.edu.hk/ ADSLab] (*A*pplied *D*istributed *S*ystem Lab) of The Chinese University of Hong Kong under the supervision by Prof [http://www.cse.cuhk.edu.hk/~pclee/www/index.html Patrick P. C. Lee]. \n
+His research interests span Network Security and Distributed Storage System. Currently, he focuses on the topic of *Secure Deduplication* in cloud storage system.
+
+~~~
+{My Favourite Motto}{pyint}
+>>> print(Motto)
+'Be rigorous in your work'
+'Work hard - keep a regular habit'
+'No personal feeling'
+'No pain, no gain'
+~~~
+
+== Education
+- The Chinese University of Hong Kong (Aug.2018 \~ Now), Ph.D. in Computer Science, Department of Computer Science & Engineering, Supervised by Prof [http://www.cse.cuhk.edu.hk/~pclee/www/index.html Patrick P. C. Lee]
+- Xi'an Jiaotong University (Sep.2014 \~ July.2018), B.E. in Computer Science, Department of Computer Science & Technology, Supervised by Prof [http://gr.xjtu.edu.cn/web/p-zhang/home Peng Zhang]
+- University of British Columbia, Canada (July.2016 \~ Aug.2016), Visiting Student, Department of Electrical and Computer Engineering 
+
+== Selected Award
+- CUHK Postgraduate Studentship: 2018 \~ now
+- ICDCS Student Travel Grant Award: 2018
+- Outstanding Bachelor's Thesis Award of Xi'an Jiaotong University: 2018 [http://dean.xjtu.edu.cn/info/1024/5931.htm link]
+- Outstanding B.E. Graduate of Xi'an Jiaotong University: 2018 [http://xsc.xjtu.edu.cn/info/1039/12947.htm link] 
+- *China Computer Federation Elite Collegiate Award (ECA)*: [http://www.ccf.org.cn/c/2017-11-01/617905.shtml 2017]
+- *Chinese National Shcolarship*\*2: 2016, 2017
+- "Seagate Technology" Technology and Innovation Scholarship: 2017
+- The Titile of "Annual Excellent Student" of Xi'an Jiaotong University\*3: 2015, 2016, 2017
+- Mathematical Contest in Modeling of US (MCM): Meritorious Award (2016), Honorable Mention Award\*2 (2017, 2018) 
+- "Si Yuan" Scholarship: 2015
+- 2013 Dongrun-Yau Science Award (Math track), Silver Award (with Runda Ji and Hongyuan Fu), reported by "People's Daily": [http://scitech.people.com.cn/n/2013/1217/c1007-23858725.html link]
+
+== Publications 
+. *Zuoru Yang*, Jingwei Li, Yanjing Ren, and Patrick P. C. Lee, \"Tunable Encrypted Deduplication with Attack-Resilient Key Management\"\n
+Accepted in ACM Transactions on Storage (*ToS*). (CCF-A) \n
+[pdf/tos22.pdf \[pdf\]]
+. Yanjing Ren, Jingwei Li, *Zuoru Yang*, Patrick P. C. Lee, and Xiaosong Zhang, \"Accelerating Encrypted Deduplication via SGX\"\n
+Proceedings of the USENIX Annual Technical Conference (*USENIX ATC*),Virtual, July, 2021. (AR: 64/341=18.8%, CCF-A) \n
+[pdf/atc21.pdf \[pdf\]] [http://adslab.cse.cuhk.edu.hk/software/sgxdedup/ \[software\]]
+. Jingwei Li, Suyu Huang, Yanjing Ren, *Zuoru Yang*, Patrick P. C. Lee, Xiaosong Zhang, and Yao Hao, \"Enabling Secure and Space-Efficient Metadata Management in Encrypted Deduplication\"\n
+Accepted in IEEE Transactions on Computers (*TC*). (CCF-A) \n
+[pdf/tc21metadedup.pdf \[pdf\]] [https://ieeexplore.ieee.org/document/9381688 \[doi\]] [http://adslab.cse.cuhk.edu.hk/software/metadedup/ \[software\]]
+. Xiaolu Li, *Zuoru Yang*, Jinhong Li, Runhui Li, Patrick P. C. Lee, Qun Huang, Yuchong Hu, \"Repair Pipelining for Erasure-Coded Storage: Algorithms and Evaluation\"\n 
+ACM Transactions on Storage (*ToS*), 17(2), 13:1-13:29, May 2021. (CCF-A)\n
+[https://arxiv.org/pdf/1908.01527.pdf \[arxiv\]] [https://doi.org/10.1145/3436890 \[doi\]] [http://adslab.cse.cuhk.edu.hk/software/ecpipe/ \[software\]]
+. Peng Zhang, Fangzheng Zhang, Shimin Xu, *Zuoru Yang*, Hao Li, Qi Li, Huanzhao Wang, Chao Shen, Chengchen Hu, \"Network-Wide Forwarding Anomaly Detection and Localization in Software Defined Networks\"\n
+IEEE/ACM Transactions on Networking (*ToN*), 29(1), pp.332-345, Feb 2021. (CCF-A)\n 
+[https://ieeexplore.ieee.org/document/9246736 \[doi\]]
+. Jingwei Li, *Zuoru Yang*, Yanjing Ren, Patrick P. C. Lee, and Xiaosong Zhang, \"Balancing Storage Efficiency and Data Confidentiality with Tunable Encrypted Deduplication\"\n
+Proceedings of the 15th European Conference on Computer Systems (*EuroSys*), Heraklion, Crete, Greece, April 2020. (AR: 43/234=18.4%, CCF-B)\n
+[pdf/eurosys20.pdf \[pdf\]] [http://adslab.cse.cuhk.edu.hk/software/ted/ \[software\]]
+. Peng Zhang, Shimin Xu, *Zuoru Yang*, Hao Li, Qi Li, Huanzhao Wang, Chengchen Hu, \"FOCES: Detecting Forwarding Anomalies in Software Defined Networks\"\n
+Proceedings of the IEEE 38th International Conference on Distributed Computing Systems (*ICDCS*), Vienna, Austria, July 2018. (AR: 78/378=20.6%, CCF-B)\n
+[pdf/icdcs18.pdf \[pdf\]] [ppt/FOCES-ICDCS'18.pptx \[ppt\]]
+. Runda Ji, Hongyuan Fu, *Zuoru Yang*, Min Wei, \"The Geometrical Analysis of the Path of Free Kick\"\n 
+In Archive of Yau Mathematical Science Center, Tsinghua University.\n
+[pdf/2013-Yau.pdf \[pdf\]]
+== Teaching Assistant
+- 2018-2020 ENGG1110: Problem Solving By Programming (C)
+- 2018-2019 CSCI4190: Introduction to Social Networks
+- 2019-2020 CSCI1530: Computer Principles and Java Programming (Java)
+- 2020-2021 CSCI4180: Introduction to Cloud Computing and Storage
+- 2020-2021 CSCI4430: Data Communication and Computer Networks
+- 2020-2021 AIST3020: Introduction to Computer Systems
+
