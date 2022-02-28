@@ -47,7 +47,7 @@ His research interests span Network Security and Distributed Storage System. Cur
 == Publications 
 . *Zuoru Yang*, Jingwei Li, Yanjing Ren, and Patrick P. C. Lee, \"Tunable Encrypted Deduplication with Attack-Resilient Key Management\"\n
 Accepted in ACM Transactions on Storage (*ToS*). (CCF-A) \n
-[pdf/tos22.pdf \[pdf\]]
+[pdf/tos22.pdf \[pdf\]] [http://adslab.cse.cuhk.edu.hk/software/ted/ \[software\]]
 . Yanjing Ren, Jingwei Li, *Zuoru Yang*, Patrick P. C. Lee, and Xiaosong Zhang, \"Accelerating Encrypted Deduplication via SGX\"\n
 Proceedings of the USENIX Annual Technical Conference (*USENIX ATC*),Virtual, July, 2021. (AR: 64/341=18.8%, CCF-A) \n
 [pdf/atc21.pdf \[pdf\]] [http://adslab.cse.cuhk.edu.hk/software/sgxdedup/ \[software\]]
