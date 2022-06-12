@@ -47,6 +47,7 @@ His research interests span Network Security and Distributed Storage System. Cur
 == Publications 
 . *Zuoru Yang*, Jingwei Li, and Patrick P. C. Lee, \"Secure and Lightweight Deduplicated Storage via Shielded Deduplication-Before-Encryption\"\n
 Proceedings of the USENIX Annual Technical Conference (*USENIX ATC*), Carlsbad, CA, USA, July 2022. (AR: 64/393=16.3%, CCF-A) \n
+[pdf/atc22.pdf \[pdf\]] [pdf/tech_debe.pdf \[tech report\]] [https://github.com/yzr95924/DEBE \[software\]] (*Awarded with USENIX artifact badges*: Available, Functional, Results Reproduced)
 . *Zuoru Yang*, Jingwei Li, Yanjing Ren, and Patrick P. C. Lee, \"Tunable Encrypted Deduplication with Attack-Resilient Key Management\"\n
 Accepted in ACM Transactions on Storage (*ToS*). (CCF-A) \n
 [pdf/tos22.pdf \[pdf\]] [http://adslab.cse.cuhk.edu.hk/software/ted/ \[software\]]
