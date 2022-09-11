@@ -49,7 +49,7 @@ His research interests span Network Security and Distributed Storage System. Cur
 Proceedings of the USENIX Annual Technical Conference (*USENIX ATC*), Carlsbad, CA, USA, July 2022. (AR: 64/393=16.3%, CCF-A) \n
 [pdf/atc22.pdf \[pdf\]] [pdf/tech_debe.pdf \[tech report\]] [https://github.com/yzr95924/DEBE \[software\]] (*Awarded with USENIX artifact badges*: Available, Functional, Results Reproduced)
 . *Zuoru Yang*, Jingwei Li, Yanjing Ren, and Patrick P. C. Lee. \"Tunable Encrypted Deduplication with Attack-Resilient Key Management.\"\n
-Accepted in ACM Transactions on Storage (*ToS*). (CCF-A) \n
+Accepted in ACM Transactions on Storage (*TOS*). (CCF-A) \n
 [pdf/tos22.pdf \[pdf\]] [http://adslab.cse.cuhk.edu.hk/software/ted/ \[software\]]
 . Yanjing Ren, Jingwei Li, *Zuoru Yang*, Patrick P. C. Lee, and Xiaosong Zhang. \"Accelerating Encrypted Deduplication via SGX.\"\n
 Proceedings of the USENIX Annual Technical Conference (*USENIX ATC*), Virtual, July 2021. (AR: 64/341=18.8%, CCF-A) \n
@@ -58,10 +58,10 @@ Proceedings of the USENIX Annual Technical Conference (*USENIX ATC*), Virtual, J
 Accepted in IEEE Transactions on Computers (*TC*). (CCF-A) \n
 [pdf/tc21metadedup.pdf \[pdf\]] [https://ieeexplore.ieee.org/document/9381688 \[doi\]] [http://adslab.cse.cuhk.edu.hk/software/metadedup/ \[software\]]
 . Xiaolu Li, *Zuoru Yang*, Jinhong Li, Runhui Li, Patrick P. C. Lee, Qun Huang, and Yuchong Hu. \"Repair Pipelining for Erasure-Coded Storage: Algorithms and Evaluation.\"\n 
-Accepted in ACM Transactions on Storage (*ToS*). (CCF-A)\n
+Accepted in ACM Transactions on Storage (*TOS*). (CCF-A)\n
 [https://arxiv.org/pdf/1908.01527.pdf \[arxiv\]] [https://doi.org/10.1145/3436890 \[doi\]] [http://adslab.cse.cuhk.edu.hk/software/ecpipe/ \[software\]]
 . Peng Zhang, Fangzheng Zhang, Shimin Xu, *Zuoru Yang*, Hao Li, Qi Li, Huanzhao Wang, Chao Shen, and Chengchen Hu. \"Network-Wide Forwarding Anomaly Detection and Localization in Software Defined Networks.\"\n
-Accepted in IEEE/ACM Transactions on Networking (*ToN*). (CCF-A)\n 
+Accepted in IEEE/ACM Transactions on Networking (*TON*). (CCF-A)\n 
 [https://ieeexplore.ieee.org/document/9246736 \[doi\]]
 . Jingwei Li, *Zuoru Yang*, Yanjing Ren, Patrick P. C. Lee, and Xiaosong Zhang. \"Balancing Storage Efficiency and Data Confidentiality with Tunable Encrypted Deduplication.\"\n
 Proceedings of the 15th European Conference on Computer Systems (*EuroSys*), Heraklion, Crete, Greece, April 2020. (AR: 43/234=18.4%, CCF-B)\n
