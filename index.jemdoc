@@ -4,7 +4,7 @@
 
 ~~~
 {}{img_left}{photos/bio.jpg}{alt text}{131}{160}
-Ph.D Student,\n
+Ph.D. \n
 Room 118, Ho Sin-Hang Engineering Building,\n 
 [http://www.cse.cuhk.edu.hk/en/ Department of Computer Science and Engineering],\n
 [http://www.cuhk.edu.hk/chinese/index.html The Chinese University of Hong Kong]\n
@@ -13,13 +13,26 @@ E-mail: /yzr95924/@gmail.com \n
 ~~~
 
 == About me
-Zuoru Yang got his Bachelor's degree from [http://www.cs.xjtu.edu.cn/ Department of Computer Science and Technology], [http://www.xjtu.edu.cn/ Xi'an Jiaotong University] in 2018.
-In /XJTU/, he worked with Prof Peng Zhang to do the research about Software-Defined Network (SDN) and Network Function Virtualization (NFV) (e.g. design debug/verification tool in SDN and NFV). Now, he is pursuing his PhD degree in [http://adslab.cse.cuhk.edu.hk/ ADSLab] (*A*pplied *D*istributed *S*ystem Lab) of The Chinese University of Hong Kong under the supervision by Prof [http://www.cse.cuhk.edu.hk/~pclee/www/index.html Patrick P. C. Lee]. \n
-His research interests span Network Security and Distributed Storage System. Currently, he focuses on the topic of *Secure Deduplication* in cloud storage system.
+Zuoru Yang received his Ph.D. degree from [https://www.cse.cuhk.edu.hk/
+Department of Computer Science and Engineering, The Chinese University of Hong
+Kong (CUHK)] in 2022. At CUHK, I was a member of
+[http://adslab.cse.cuhk.edu.hk/ Applied Distributed System Lab (ADSLab)],
+supervised by [http://www.cse.cuhk.edu.hk/~pclee/www/index.html Prof. Patrick
+P. C. Lee]. Previously, he got his B.Eng. degree from
+[http://www.cs.xjtu.edu.cn/ Department of Computer Science and Technology,
+Xi'an Jiaotong University (XJTU)] in 2018.  At XJTU, he worked with
+[http://gr.xjtu.edu.cn/web/p-zhang Prof. Peng Zhang] in Software-Defined
+Network (SDN) and Network Function Virtualization (NFV) (e.g.  design
+debug/verification tool in SDN and NFV). \n
+
+His research interest is in *storage systems*, specifically applying data
+reduction techniques (e.g., deduplication, delta compression, and local
+compression), data protection techniques (e.g., encryption and trusted
+computing), and fault tolerance techniques (e.g., erasure coding) in various
+storage systems for storage efficiency, security, and fault tolerance. \n
 
 ~~~
-{My Favourite Motto}{pyint}
->>> print(Motto)
+{Favourite Motto}{pyint}
 'Be rigorous in your work'
 'Work hard - keep a regular habit'
 'No personal feeling'
@@ -27,12 +40,17 @@ His research interests span Network Security and Distributed Storage System. Cur
 ~~~
 
 == Education
-- The Chinese University of Hong Kong (Aug.2018 \~ Now), Ph.D. in Computer Science, Department of Computer Science & Engineering, Supervised by Prof [http://www.cse.cuhk.edu.hk/~pclee/www/index.html Patrick P. C. Lee]
-- Xi'an Jiaotong University (Sep.2014 \~ July.2018), B.E. in Computer Science, Department of Computer Science & Technology, Supervised by Prof [http://gr.xjtu.edu.cn/web/p-zhang/home Peng Zhang]
-- University of British Columbia, Canada (July.2016 \~ Aug.2016), Visiting Student, Department of Electrical and Computer Engineering 
+- The Chinese University of Hong Kong (Aug.2018 \~ Sep.2022), Ph.D. in
+Computer Science, Department of Computer Science & Engineering, Supervised by
+Prof. [http://www.cse.cuhk.edu.hk/~pclee/www/index.html Patrick P. C. Lee]
+- Xi'an Jiaotong University (Sep.2014 \~ July.2018), B.E. in Computer Science,
+Department of Computer Science & Technology, Supervised by Prof.
+[http://gr.xjtu.edu.cn/web/p-zhang/home Peng Zhang]
+- University of British Columbia, Canada (July.2016 \~ Aug.2016), Visiting
+Student, Department of Electrical and Computer Engineering 
 
 == Selected Award
-- CUHK Postgraduate Studentship: 2018 \~ now
+- CUHK Postgraduate Studentship: 2018 \~ 2022
 - ICDCS Student Travel Grant Award: 2018
 - Outstanding Bachelor's Thesis Award of Xi'an Jiaotong University: 2018 [http://dean.xjtu.edu.cn/info/1024/5931.htm link]
 - Outstanding B.E. Graduate of Xi'an Jiaotong University: 2018 [http://xsc.xjtu.edu.cn/info/1039/12947.htm link] 
@@ -47,28 +65,28 @@ His research interests span Network Security and Distributed Storage System. Cur
 == Publications 
 . *Zuoru Yang*, Jingwei Li, and Patrick P. C. Lee. \"Secure and Lightweight Deduplicated Storage via Shielded Deduplication-Before-Encryption.\"\n
 Proceedings of the USENIX Annual Technical Conference (*USENIX ATC*), Carlsbad, CA, USA, July 2022. (AR: 64/393=16.3%, CCF-A) \n
-[pdf/atc22.pdf \[pdf\]] [pdf/tech_debe.pdf \[tech report\]] [https://github.com/yzr95924/DEBE \[software\]] (*Awarded with USENIX artifact badges*: Available, Functional, Results Reproduced)
+[pdf/atc22debe.pdf \[pdf\]] [ppt/DEBE-atc22.pdf \[slides\]] [pdf/tech_debe.pdf \[tech report\]] [https://github.com/yzr95924/DEBE \[software\]] (*Awarded with USENIX artifact badges*: Available, Functional, Results Reproduced)
 . *Zuoru Yang*, Jingwei Li, Yanjing Ren, and Patrick P. C. Lee. \"Tunable Encrypted Deduplication with Attack-Resilient Key Management.\"\n
 Accepted in ACM Transactions on Storage (*TOS*). (CCF-A) \n
-[pdf/tos22.pdf \[pdf\]] [http://adslab.cse.cuhk.edu.hk/software/ted/ \[software\]]
+[pdf/tos22ted.pdf \[pdf\]] [http://adslab.cse.cuhk.edu.hk/software/ted/ \[software\]]
 . Yanjing Ren, Jingwei Li, *Zuoru Yang*, Patrick P. C. Lee, and Xiaosong Zhang. \"Accelerating Encrypted Deduplication via SGX.\"\n
 Proceedings of the USENIX Annual Technical Conference (*USENIX ATC*), Virtual, July 2021. (AR: 64/341=18.8%, CCF-A) \n
-[pdf/atc21.pdf \[pdf\]] [http://adslab.cse.cuhk.edu.hk/software/sgxdedup/ \[software\]]
+[pdf/atc21sgxdedup.pdf \[pdf\]] [ppt/SGXDedup-atc21.pdf \[slides\]] [http://adslab.cse.cuhk.edu.hk/software/sgxdedup/ \[software\]]
 . Jingwei Li, Suyu Huang, Yanjing Ren, *Zuoru Yang*, Patrick P. C. Lee, Xiaosong Zhang, and Yao Hao. \"Enabling Secure and Space-Efficient Metadata Management in Encrypted Deduplication.\"\n
 Accepted in IEEE Transactions on Computers (*TC*). (CCF-A) \n
 [pdf/tc21metadedup.pdf \[pdf\]] [https://ieeexplore.ieee.org/document/9381688 \[doi\]] [http://adslab.cse.cuhk.edu.hk/software/metadedup/ \[software\]]
 . Xiaolu Li, *Zuoru Yang*, Jinhong Li, Runhui Li, Patrick P. C. Lee, Qun Huang, and Yuchong Hu. \"Repair Pipelining for Erasure-Coded Storage: Algorithms and Evaluation.\"\n 
 Accepted in ACM Transactions on Storage (*TOS*). (CCF-A)\n
-[https://arxiv.org/pdf/1908.01527.pdf \[arxiv\]] [https://doi.org/10.1145/3436890 \[doi\]] [http://adslab.cse.cuhk.edu.hk/software/ecpipe/ \[software\]]
+[pdf/tos21ecpipe.pdf \[pdf\]] [https://doi.org/10.1145/3436890 \[doi\]] [http://adslab.cse.cuhk.edu.hk/software/ecpipe/ \[software\]]
 . Peng Zhang, Fangzheng Zhang, Shimin Xu, *Zuoru Yang*, Hao Li, Qi Li, Huanzhao Wang, Chao Shen, and Chengchen Hu. \"Network-Wide Forwarding Anomaly Detection and Localization in Software Defined Networks.\"\n
 Accepted in IEEE/ACM Transactions on Networking (*TON*). (CCF-A)\n 
-[https://ieeexplore.ieee.org/document/9246736 \[doi\]]
+[pdf/ton20foces.pdf \[pdf\]] [https://ieeexplore.ieee.org/document/9246736 \[doi\]]
 . Jingwei Li, *Zuoru Yang*, Yanjing Ren, Patrick P. C. Lee, and Xiaosong Zhang. \"Balancing Storage Efficiency and Data Confidentiality with Tunable Encrypted Deduplication.\"\n
 Proceedings of the 15th European Conference on Computer Systems (*EuroSys*), Heraklion, Crete, Greece, April 2020. (AR: 43/234=18.4%, CCF-B)\n
-[pdf/eurosys20.pdf \[pdf\]] [http://adslab.cse.cuhk.edu.hk/software/ted/ \[software\]]
+[pdf/eurosys20ted.pdf \[pdf\]] [ppt/TED-eurosys20.pdf \[slides\]] [http://adslab.cse.cuhk.edu.hk/software/ted/ \[software\]]
 . Peng Zhang, Shimin Xu, *Zuoru Yang*, Hao Li, Qi Li, Huanzhao Wang, and Chengchen Hu. \"FOCES: Detecting Forwarding Anomalies in Software Defined Networks.\"\n
 Proceedings of the IEEE 38th International Conference on Distributed Computing Systems (*ICDCS*), Vienna, Austria, July 2018. (AR: 78/378=20.6%, CCF-B)\n
-[pdf/icdcs18.pdf \[pdf\]] [ppt/FOCES-ICDCS'18.pptx \[ppt\]]
+[pdf/icdcs18foces.pdf \[pdf\]] [ppt/FOCES-icdcs18.pdf \[slides\]]
 . Runda Ji, Hongyuan Fu, *Zuoru Yang*, and Min Wei. \"The Geometrical Analysis of the Path of Free Kick.\"\n 
 In Archive of Yau Mathematical Science Center, Tsinghua University.\n
 [pdf/2013-Yau.pdf \[pdf\]]
@@ -79,4 +97,3 @@ In Archive of Yau Mathematical Science Center, Tsinghua University.\n
 - 2020-2021 CSCI4180: Introduction to Cloud Computing and Storage
 - 2020-2021 CSCI4430: Data Communication and Computer Networks
 - 2020-2021 AIST3020: Introduction to Computer Systems
-
