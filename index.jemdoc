@@ -83,7 +83,7 @@ Accepted in ACM Transactions on Storage (*TOS*). (CCF-A)\n
 Accepted in IEEE/ACM Transactions on Networking (*TON*). (CCF-A)\n 
 [pdf/ton20foces.pdf \[pdf\]] [https://ieeexplore.ieee.org/document/9246736 \[doi\]]
 . Jingwei Li, *Zuoru Yang*, Yanjing Ren, Patrick P. C. Lee, and Xiaosong Zhang. \"Balancing Storage Efficiency and Data Confidentiality with Tunable Encrypted Deduplication.\"\n
-Proceedings of the 15th European Conference on Computer Systems (*EuroSys*), Heraklion, Crete, Greece, April 2020. (AR: 43/234=18.4%, CCF-B)\n
+Proceedings of the 15th European Conference on Computer Systems (*EuroSys*), Heraklion, Crete, Greece, April 2020. (AR: 43/234=18.4%, CCF-A)\n
 [pdf/eurosys20ted.pdf \[pdf\]] [ppt/TED-eurosys20.pdf \[slides\]] [http://adslab.cse.cuhk.edu.hk/software/ted/ \[software\]]
 . Peng Zhang, Shimin Xu, *Zuoru Yang*, Hao Li, Qi Li, Huanzhao Wang, and Chengchen Hu. \"FOCES: Detecting Forwarding Anomalies in Software Defined Networks.\"\n
 Proceedings of the IEEE 38th International Conference on Distributed Computing Systems (*ICDCS*), Vienna, Austria, July 2018. (AR: 78/378=20.6%, CCF-B)\n
