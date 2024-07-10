@@ -66,6 +66,7 @@ Student, Department of Electrical and Computer Engineering
 == Publications 
 . Jia Zhao, *Zuoru Yang*, Jingwei Li, and Patrick P. C. Lee. \"Encrypted Data Reduction: Removing Redundancy from Encrypted Data in Outsourced Storage.\"\n
 Accepted in ACM Transactions on Storage (*TOS*), 2024. (CCF-A) \n
+[pdf/tos24edrstore.pdf \[pdf\]] [https://github.com/adslabcuhk/edrstore \[software\]]
 . *Zuoru Yang*, Jingwei Li, and Patrick P. C. Lee. \"Secure and Lightweight Deduplicated Storage via Shielded Deduplication-Before-Encryption.\"\n
 Proceedings of the USENIX Annual Technical Conference (*USENIX ATC*), Carlsbad, CA, USA, July 2022. (AR: 64/393=16.3%, CCF-A) \n
 [pdf/atc22debe.pdf \[pdf\]] [ppt/DEBE-atc22.pdf \[slides\]] [pdf/tech_debe.pdf \[tech report\]] [https://github.com/yzr95924/DEBE \[software\]] (*Awarded with USENIX artifact badges*: Available, Functional, Results Reproduced)
